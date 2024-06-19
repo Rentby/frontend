@@ -1,0 +1,15 @@
+runtime: python39
+service: frontend
+
+env_variables:
+  TARGET_URL: 'https://frontend-dot-rent-by.et.r.appspot.com'
+  TARGET_SERVICE_ACCOUNT: 'rent-by@appspot.gserviceaccount.com'
+
+handlers:
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
