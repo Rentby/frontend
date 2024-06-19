@@ -412,13 +412,3 @@ footer .credit a {
     height: 20rem;
   }
 }
-
-/* CSS untuk penyorotan hasil pencarian */
-.highlight.result {
-  background-color: yellow;
-  font-weight: bold;
-}
-
-.highlight.next-result {
-  background-color: orange;
-}
